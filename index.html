@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ppaparazzi Bar cum Restaurant | Globsyn Crystals Sector V</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Step into Ppaparazzi, Sector V's premium high-energy lounge bar inside Globsyn Crystals. Enjoy handcrafted mocktails, sizzling kebabs, and live DJ beats with zero booking fees.">
+    <!-- Google Fonts - Luxury Modern High-Energy Pub Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons for UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="editorial-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">PPAPARAZZI</a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Lounge</a>
+                <a href="#beats" class="nav-link">Beats</a>
+                <a href="#palette" class="nav-link">Menu Book</a>
+                <a href="#reviews" class="nav-link">Buzz</a>
+                <a href="#booking-section" class="nav-link">Booking</a>
+            </nav>
+            <button class="btn btn-primary" onclick="openModal()">
+                VIP Direct Booking
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section with Cover Background - Premium Asymmetric Editorial Layout -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-container">
+                <span class="sub-label">GLOBSYN CRYSTALS, SECTOR V</span>
+                <h1>Find Your <br><span class="italic-serif">Corner</span></h1>
+                <p class="hero-desc">
+                    A sanctuary of warm wood, soft lighting, and high ceilings tucked inside AJ Block. We serve honest Indian & Italian plates alongside meticulously balanced cocktails—crafted for those who value quiet conversations and a slower pace.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-lg" onclick="openModal()">
+                        Book VIP Direct
+                    </button>
+                    <a href="#palette" class="btn btn-outline btn-lg">Explore the Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beats / Live DJ Section (High Energy Bento Grid) -->
+        <section id="beats" class="beats-section">
+            <div class="section-meta">
+                <span class="section-tag">HIGH-ENERGY BEATS</span>
+                <h2>Late Night & Happy Hour</h2>
+            </div>
+            
+            <div class="beats-grid">
+                <!-- Large DJ Feature Card -->
+                <div class="dj-image-card">
+                    <div class="dj-image-overlay"></div>
+                    <img src="assets/images/dj.png" alt="Elite DJ setup at Ppaparazzi" class="dj-bg-img">
+                    <div class="dj-img-content">
+                        <h3>Vibrant Weekend Beats</h3>
+                        <p>Kolkata's top DJs spinning modern house, classic rock remixes, and deep club grooves under ambient neon lights.</p>
+                    </div>
+                </div>
+                
+                <!-- Happy Hour Calendar -->
+                <div class="happy-scheduler">
+                    <h3 class="schedule-title">Curated Happy Hour Sessions</h3>
+                    
+                    <div class="schedule-list">
+                        <div class="schedule-item active">
+                            <div class="sched-day">
+                                <span class="day">Fri</span>
+                                <span class="status">Tonight</span>
+                            </div>
+                            <div class="sched-detail">
+                                <h4>Corporate After-Hours DJ</h4>
+                                <p>Unwind after work with hand-crafted mixology flights and high-tempo retro beats.</p>
+                            </div>
+                            <div class="sched-time">7:00 PM onwards</div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="sched-day">
+                                <span class="day">Sat</span>
+                            </div>
+                            <div class="sched-detail">
+                                <h4>Saturday Club Anthems</h4>
+                                <p>High-energy commercial remixes, club anthems, and glowing neon visual mixers.</p>
+                            </div>
+                            <div class="sched-time">8:00 PM onwards</div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="sched-day">
+                                <span class="day">Wed</span>
+                            </div>
+                            <div class="sched-detail">
+                                <h4>Mid-Week Chill & Brews</h4>
+                                <p>Slow down with premium draft discounts, unplugged music, and clay-oven snack trays.</p>
+                            </div>
+                            <div class="sched-time">6:00 PM onwards</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Palette / 3D Scroll-Flip Book Menu Section -->
+        <section id="palette" class="menu-section">
+            
+            <!-- Parent Scroll Pin Runway -->
+            <div class="scroll-pin-wrapper">
+                
+                <!-- Sticky Viewport centered in screen -->
+                <div class="book-viewport">
+                    <div class="section-meta text-center">
+                        <span class="section-tag">CURATED BAR MENU</span>
+                        <h2>The Showcase Booklet</h2>
+                        <p class="section-subtitle">Scroll down slowly to turn the pages and read our actual printed menu.</p>
+                    </div>
+                    
+                    <div class="book-container">
+                        <div class="book-mesh" id="menu-book">
+                            
+                            <!-- Left Cover Board (Fixed background) -->
+                            <div class="book-page cover-back-left">
+                                <div class="cover-design">
+                                    <h3>PPAPARAZZI</h3>
+                                    <p>BAR & GRILL</p>
+                                </div>
+                            </div>
+
+                            <!-- Sheet 1 (Pages 1 & 2) - Bar Bites & Dim Sum -->
+                            <div class="book-page sheet-1" id="sheet-1">
+                                <div class="page-side front-side">
+                                    <div class="page-padding">
+                                        <span class="page-header-tag">BAR BITES &bull; PAGE 1</span>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Crispy Pepper Chicken</h4>
+                                                <span class="price">₹380</span>
+                                            </div>
+                                            <p>Wok-tossed chicken strips, green bell peppers, dark soy glaze, scallions.</p>
+                                        </div>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Loaded Cheese Nachos</h4>
+                                                <span class="price">₹320</span>
+                                            </div>
+                                            <p>Golden tortilla chips, bubbling warm cheddar cheese sauce, refried beans, sour cream.</p>
+                                        </div>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Chili Garlic Fries</h4>
+                                                <span class="price">₹240</span>
+                                            </div>
+                                            <p>Skin-on potato wedges dusted with fiery local red chili powder, served with mayo.</p>
+                                        </div>
+                                        <div class="page-footer-num">I</div>
+                                    </div>
+                                </div>
+                                <div class="page-side back-side">
+                                    <div class="page-padding">
+                                        <span class="page-header-tag">THE PAN-ASIAN CORNER &bull; PAGE 2</span>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Charcoal Dimsum Platter</h4>
+                                                <span class="price">₹450</span>
+                                            </div>
+                                            <p>Assorted tandoor-steamed pan-asian dim sums with premium chili garlic dip.</p>
+                                        </div>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Spring Roll Basket</h4>
+                                                <span class="price">₹280</span>
+                                            </div>
+                                            <p>Crispy hand-rolled vegetable spring rolls served with sweet plum dipping sauce.</p>
+                                        </div>
+                                        <div class="page-footer-num">II</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sheet 2 (Pages 3 & 4) - Tandoor Grills & Platters -->
+                            <div class="book-page sheet-2" id="sheet-2">
+                                <div class="page-side front-side">
+                                    <div class="page-padding">
+                                        <span class="page-header-tag">CLAY-OVEN GRILLS &bull; PAGE 3</span>
+                                        <div class="dish-showcase">
+                                            <img src="assets/images/sizzler.png" alt="Mixed Sizzler" class="showcase-img">
+                                            <h4>Mixed Tandoori Sizzler</h4>
+                                            <p>Steaming hot iron skillet kebab platter, chicken tikka, fish tikka, fresh coriander dip.</p>
+                                        </div>
+                                        <div class="page-footer-num">III</div>
+                                    </div>
+                                </div>
+                                <div class="page-side back-side">
+                                    <div class="page-padding">
+                                        <span class="page-header-tag">TANDOOR SELECTIONS &bull; PAGE 4</span>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Zafrani Murgh Tikka</h4>
+                                                <span class="price">₹480</span>
+                                            </div>
+                                            <p>Boneless chicken pieces marinated in saffron, yogurt, and spices, clay-oven grilled.</p>
+                                        </div>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Tandoori Pomfret</h4>
+                                                <span class="price">₹650</span>
+                                            </div>
+                                            <p>Whole Pomfret fish charred to perfection, served with charred lemon, coriander chutney.</p>
+                                        </div>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Paneer Tikka Shaslik</h4>
+                                                <span class="price">₹380</span>
+                                            </div>
+                                            <p>Charred paneer cubes, green bell pepper, onion wedges, yellow spice marinade.</p>
+                                        </div>
+                                        <div class="page-footer-num">IV</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sheet 3 (Pages 5 & 6) - Cocktails & Mixology -->
+                            <div class="book-page sheet-3" id="sheet-3">
+                                <div class="page-side front-side">
+                                    <div class="page-padding">
+                                        <span class="page-header-tag">SIGNATURE COCKTAILS &bull; PAGE 5</span>
+                                        <div class="dish-showcase">
+                                            <img src="assets/images/cocktail.png" alt="Ppaparazzi Mixology" class="showcase-img">
+                                            <h4>Ppaparazzi Smoking Mixology</h4>
+                                            <p>Dry-ice infused crystal glass, craft gin, cherry liqueur, aromatic lime spray.</p>
+                                        </div>
+                                        <div class="page-footer-num">V</div>
+                                    </div>
+                                </div>
+                                <div class="page-side back-side">
+                                    <div class="page-padding">
+                                        <span class="page-header-tag">HAPPY HOUR DRAFTS &bull; PAGE 6</span>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Premium Draught Beer</h4>
+                                                <span class="price">₹280</span>
+                                            </div>
+                                            <p>Chilled local fresh draught craft beer served straight from the tap.</p>
+                                        </div>
+                                        <div class="menu-book-item">
+                                            <div class="item-header">
+                                                <h4>Blackberry Whiskey Sour</h4>
+                                                <span class="price">₹450</span>
+                                            </div>
+                                            <p>Bourbon whiskey, muddled fresh blackberries, organic sweet and sour, lemon wheel.</p>
+                                        </div>
+                                        <div class="page-footer-num">VI</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Cover Board (Fixed background backplate) -->
+                            <div class="book-page cover-back-right">
+                                <div class="cover-design">
+                                    <h3>PPAPARAZZI</h3>
+                                    <p>BON APPÉTIT</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Responsive Touch-Swipe Slider Menu Fallback -->
+            <div class="mobile-menu-stack">
+                <h3>Our Menu</h3>
+                <p class="section-subtitle mb-4">Swipe to browse. Tap to zoom & read.</p>
+                
+                <div class="mobile-menu-slider-wrapper">
+                    <div class="mobile-menu-slider">
+                        <!-- Slide 1 -->
+                        <div class="mobile-menu-slide">
+                            <span class="m-page-tag">PAGE 1 &bull; MIXED TANDOORI SIZZLER</span>
+                            <img src="assets/images/sizzler.png" alt="Mixed Sizzler" onclick="zoomMobileImage(this)">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="mobile-menu-slide">
+                            <span class="m-page-tag">PAGE 2 &bull; SIGNATURE MIXOLOGY</span>
+                            <img src="assets/images/cocktail.png" alt="Ppaparazzi Mixology" onclick="zoomMobileImage(this)">
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Navigation Indicator Dots -->
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Guest Reviews Section -->
+        <section id="reviews" class="reviews-section">
+            <div class="section-meta text-center">
+                <span class="section-tag">THE BUZZ</span>
+                <h2>What the Crowds Say</h2>
+                <p class="section-subtitle">A collection of shared dining experiences from our patrons on Google (700+ reviews).</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card glass-card">
+                    <div class="review-header">
+                        <div class="reviewer-meta">
+                            <h4>Rohan Roy</h4>
+                            <span class="rev-tag">Local Guide</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "Great place to chill after work. Located right on the ground floor of Globsyn Crystals, opposite KFC. Excellent collection of draft beers and tandoori sizzlers. Highly recommended."
+                    </p>
+                    <span class="review-date">3 Months Ago &bull; Google Maps Review</span>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card glass-card">
+                    <div class="review-header">
+                        <div class="reviewer-meta">
+                            <h4>Sneha Paul</h4>
+                            <span class="rev-tag">Verified Diner</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "Lively pub, great music, and friendly staff. The smoking cocktails are really awesome and look cool. The crispy chicken and dim sums were superb. Will definitely visit again."
+                    </p>
+                    <span class="review-date">2 Months Ago &bull; Google Maps Review</span>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card glass-card">
+                    <div class="review-header">
+                        <div class="reviewer-meta">
+                            <h4>Patron Perspectives</h4>
+                            <span class="rev-tag">Verified Diner</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "Amazing after-work vibes. The music volume is pitched perfectly—loud enough to dance but comfortable for conversations. Directly book table via their host line to secure the best seats."
+                    </p>
+                    <span class="review-date">1 Year Ago &bull; Google Maps Review</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section Block -->
+        <section id="booking-section" class="booking-cta-section">
+            <div class="cta-box">
+                <h2>Secure Your Friday Night VIP Table</h2>
+                <p>Support local. Bypass third-party table-booking commission apps. Direct reservations receive absolute priority seating with zero hidden cover charges.</p>
+                <button class="btn btn-primary btn-lg" onclick="openModal()">
+                    Request VIP Direct Booking
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">PPAPARAZZI</a>
+                <p>A high-energy, vibrant bar and grill serving premium drafts, handcrafted mocktails, and steaming clay-oven sizzlers. Located right in the heart of Bidhannagar, Sector V.</p>
+            </div>
+            
+            <div class="footer-hours">
+                <h4>Lounge Hours</h4>
+                <p><strong>Every Day:</strong> 11:00 AM – 11:30 PM</p>
+                <p class="valet-note"><i class="fa-solid fa-car"></i> Complimentary Valet Parking Available</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Direct Reservations</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Ground Floor, block EP, Globsyn Crystals, Sector V, Salt Lake, Kolkata - 700091</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98365 15932</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ppaparazzi Bar. Designed with high-energy party vibes to drive commission-free direct table bookings.</p>
+        </div>
+    </footer>
+
+    <!-- Minimalist Table Booking Modal Drawer -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            
+            <!-- Standard Form Screen -->
+            <div id="modal-form-screen">
+                <h3>VIP Direct Booking</h3>
+                <p class="modal-subtitle">Reserve table directly via WhatsApp to enjoy priority VIP seating with zero commissions.</p>
+                
+                <form id="reservation-form" onsubmit="handleReservationSubmit(event)">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="booking-name">Full Name</label>
+                        <input type="text" id="booking-name" placeholder="E.g., Amit Sen" required>
+                    </div>
+
+                    <!-- Phone Input -->
+                    <div class="form-group">
+                        <label for="booking-phone">Phone Number</label>
+                        <input type="tel" id="booking-phone" placeholder="E.g., +91 98300 XXXXX" required>
+                    </div>
+
+                    <!-- Date & Time Grid -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-date">Date</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-time">Time</label>
+                            <select id="booking-time" required>
+                                <option value="12:30 PM">12:30 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="7:30 PM">7:30 PM</option>
+                                <option value="8:30 PM" selected>8:30 PM</option>
+                                <option value="9:45 PM">9:45 PM</option>
+                                <option value="10:45 PM">10:45 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Guest Count Selection -->
+                    <div class="form-group">
+                        <label for="booking-guests">Guests: <span id="guests-count-val">4</span></label>
+                        <input type="range" id="booking-guests" min="1" max="12" value="4" oninput="document.getElementById('guests-count-val').innerText = this.value">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Submit Direct Booking Request
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success Receipt Screen -->
+            <div id="modal-success-screen" class="hidden">
+                <div class="success-icon-wrapper">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3>Direct Request Logged</h3>
+                <p class="modal-subtitle">Your direct commission-free reservation has been pre-authorized.</p>
+                
+                <div class="booking-receipt">
+                    <p><strong>Name:</strong> <span id="receipt-name">Amit Sen</span></p>
+                    <p><strong>Table For:</strong> <span id="receipt-guests">4 Guests</span></p>
+                    <p><strong>Schedule:</strong> <span id="receipt-schedule">May 29 at 8:30 PM</span></p>
+                </div>
+
+                <!-- Instant WhatsApp Call to Action -->
+                <a href="#" id="whatsapp-direct-link" target="_blank" class="btn btn-whatsapp btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Confirm Direct via WhatsApp
+                </a>
+                
+                <button class="btn btn-outline btn-block mt-3" onclick="closeModal()">
+                    Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Zoom Fullscreen Lightbox Overlay -->
+    <div id="mobile-lightbox" class="lightbox-overlay" onclick="closeMobileZoom()">
+        <img id="lightbox-img" src="" alt="Zoomed Menu Page">
+        <button class="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- Vanilla Javascript Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
